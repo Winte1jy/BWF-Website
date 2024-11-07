@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Calculator - BlueWave Fitness</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="calculator.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Calorie Calculator</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="registration.html">Register</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="calculator.html">Utility</a>
+    </nav>
+  </header>
+
+  <section>
+    <form id="calculatorForm">
+      <label for="exerciseType">Exercise Type:</label>
+      <select id="exerciseType">
+        <option value="running">Running</option>
+        <option value="cycling">Cycling</option>
+        <option value="swimming">Swimming</option>
+      </select>
+
+      <label for="duration">Duration (minutes):</label>
+      <input type="number" id="duration" required>
+
+      <button type="button" onclick="calculateCalories()">Calculate</button>
+      <p>Calories Burned: <span id="caloriesOutput">0</span></p>
+    </form>
+  </section>
+</body>
+</html>
